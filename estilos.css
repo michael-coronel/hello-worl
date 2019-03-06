@@ -1,0 +1,709 @@
+*{    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'roboto condensed', sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'oswald', sans-serif;
+}
+
+h2 {
+    font-family: 'oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(213, 143, 9);
+    width: 60%;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 10px;
+    border-bottom: 5px solid rgb(34, 51, 78);
+}
+
+
+.header{
+    width: 100%;
+    height: auto    ;
+    color: white;
+    background-color: rgb(34, 51, 78);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+    position: relative;
+}
+
+.header-container{
+    display: flex;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0px auto;
+    height: auto;
+    justify-content: inherit;   
+    align-items: inherit;
+    flex-wrap: wrap;
+}
+
+/* .loguito{
+width: 15%
+} */
+.logo-header.figure{
+    width: 10%;
+    padding: 5px 5px; 
+}
+.logo-header.a{
+    width: 100%;
+}
+.logo-header.img{
+    width: 100%;
+}
+
+
+.buscar-texto{
+    height: 25px;
+    width: 300px;
+    border: 3px solid rgb(213, 143, 9);
+    border-radius: 10px
+}
+.buscar-boton{
+    /* color:black;
+    font-weight: bolder; */
+    height: 31px;
+    width: 30px;
+    margin: 0px 0px 0px -20px;
+    background-color:rgb(213, 143, 9);
+    border: 3px solid rgb(213, 143, 9);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image: url('images/lupa.png');
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.menu {
+    display: flex;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+
+.header ol, li {
+    display: inherit;
+    height: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+.link {
+    display: inherit;
+    height: inherit;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 0px 10px ;
+}
+
+
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+    text-align: center;
+}
+
+.hero img {
+
+    /* height: 100%; */
+    width: 100%;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+}
+
+.hero  div a{
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'oswald',sans-serif;
+    padding: 10px 30px;
+    margin-top: -45px;
+    border: 5px solid rgb(34, 51, 78);
+    background: rgba(213, 143, 9, 0.7);
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+}
+
+/* 
+.hero div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.servicios{
+margin-top: 40px;
+}
+
+.servicios-container{
+    width: 95%;
+    margin: 0px auto;
+    border: 2px solid rgb(34, 51, 78);
+    margin-bottom: 70px;
+}
+
+.servicios-categorias {
+    width: 95%;
+    margin: 0% auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 46%;
+    height: 500px;
+    background:rgb(34, 51, 78);
+    border: 1% solid black;
+    border-radius: 0px;
+    margin: 10px 1%;
+    overflow: hidden;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+    /* flex-wrap: wrap; */
+    /* flex-shrink: 0; */
+    /* hidden hace que se escondan las esquinas feas que sobresalen de un marco radius. */
+    /* flex shrink hace que al ajustar objetos, imagenes etc, en una fila, estos queden con la misma resolucion. */
+    
+}
+
+
+.categoria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* display: flex;
+    align-items: flex-start; */
+}
+
+
+
+.categoria-detalle{
+    background: white;
+    border: 1px solid rgb(213, 143, 9);
+    width: 85%;
+    height: 60%;
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.categoria-titulo{
+    font-size: 20px;
+    color: rgb(213, 143, 9);
+    padding-top: 10px;
+}
+.categoria-lista{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding: 10px 10px 25px 25px;
+}
+.categoria ol li a{
+    text-decoration: none;
+    color:rgb(34, 51, 78);
+    letter-spacing: -0.5px;
+    line-height: 1.5px;
+    align-self: flex-start;
+    
+    
+}
+.categoria-boton{
+
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    
+}
+.categoria-boton.texto{
+    width: 100%;
+    text-decoration: none;
+    font-family: 'oswald', sans-serif;
+    color: black;
+    background: rgb(213, 143, 9);
+    border: 1px solid black;
+    margin-bottom: 5px;
+    margin-top: -20px;
+    position: relative;
+    padding: 5px 0px;
+    
+}
+
+.organizacion{
+    /* background: red; */
+    /* margin-top: 0px; */
+    /* padding: 20px 20px; */
+    /* border-top: 5px solid rgb(34, 51, 78); */
+    
+}
+.organizacion-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.organizacion-reseña.global{
+    padding: 0% 3% 0% 2% ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.organizacion-reseña.descripcion {
+    width: 45%; 
+    height: auto;
+    font-size: 20px;
+    /* font-weight: bolder; */
+    /* font-style: italic; */
+    line-height: 2;
+    letter-spacing: -1px;
+    /* text-decoration: underline; */
+    /* background: rgba(213, 143, 9,0.8); */
+    color: black;
+    /* border-right: 5px solid rgb(34, 51, 78);
+    border-top-right-radius: 15px;  */
+    border-bottom-right-radius: 15px; 
+    /* background: linear-gradient(to right, rgba(108, 43, 125,0), rgba(108, 43, 125,1)); */
+    
+}
+
+.organizacion-reseña.pregunta{
+    font-size: 1.5em;
+}
+.organizacion-reseña.fecha{
+    font-size: .8em;
+}
+.organizacion-reseña.url{
+    font-size: .8em;
+}
+.organizacion-reseña.subdescripcion{
+    font-size: 1em;
+}
+
+
+.organizacion-reseña.imageContainer{
+    /* display: flex; */
+    align-self: center;
+    width: 50%;
+    /* height: auto; */
+    margin-top: -90px;
+}
+.organizacion-image{
+    /* display: flex; */
+    /* flex-shrink: 0; */
+    width: 100%;
+    height: auto;
+    /* height: 100%; */
+    
+}
+
+
+
+.contact{
+    border-top: 2px solid rgb(34, 51, 78);
+    background: rgb(213, 143, 9);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.form-email{
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1%; 
+}
+
+.form-email input{
+    font-size: 0.5em;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2.5% 0%;
+    padding-left: 10%;
+    background-image: url('images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x: 3%;  
+    margin: 2% 0%;
+}
+
+.form-email button{
+    font-size: 0.5em;
+    width: 90%;
+    background-color: transparent;
+    color: black    ;
+    padding: 1.5% 0%;
+    border: 2px solid black;
+    margin: 2% 0%;
+    border-radius: 5px;
+
+
+}
+.social{
+    display: flex;
+    
+}
+.social-link{
+    margin: 0px 10px
+}
+
+
+
+
+
+.footer{
+    height: auto;
+    color: white;
+    font-size: 16px;
+    background-color:rgb(34, 51, 78);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer div{
+    height: inherit;
+    margin: 1% 1%;
+
+}
+.footer p{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    /* margin: 0px 20px; */
+}
+.footer a{
+    text-decoration: inherit;
+    color: inherit;
+    height: inherit;
+}
+
+.footer img {
+    width: 90px;    
+}
+
+.franja{
+    border-left: 50px solid rgb(213, 143, 9);
+    margin: 60px 20px 100px 0px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 2000px){
+    
+    h2{
+    font-size: 40px;   
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 20px 10px;
+    border-bottom: 5px solid rgb(34, 51, 78);    
+    }
+
+    .organizacion-reseña.descripcion{
+    font-size: 20px;
+    }
+
+
+}
+
+
+/* Mi dell es 1280px  */
+
+
+@media screen and (max-width: 1024px){
+    .logo-header.figure{
+    width: 15%;
+    }
+
+    .organizacion-container{
+    /* font-size: 30px; */
+    }
+
+    h2{
+    font-size: 35px; 
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 10px 10px;
+    border-bottom: 5px solid rgb(34, 51, 78);       
+    }
+
+    .organizacion-reseña.descripcion{
+    font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header-container{
+    flex-direction: column;
+    }
+    
+    .logo-header.figure{
+    padding: 10px; 
+    width: 20%;
+    }
+    
+    .menu{
+    display: block;
+    text-align: center;
+    }
+
+    .link{
+    padding: 10px 0px;
+    }
+
+    h2{
+    font-size: 30px;     
+    padding: 0px 0px 2.5px 0px;
+    margin: 0px 0px 0px 5px;
+    border-bottom: 5px solid rgb(34, 51, 78);  
+    }
+
+    .organizacion-reseña.descripcion{
+    width: 100%;
+    font-size: 16px;
+    }
+    
+    .organizacion-reseña.imageContainer{
+    width: 70%;
+    margin-top: 0px;
+    }
+
+    .categoria{
+    width: 96%;
+    height: 500px;
+    background:rgb(34, 51, 78);
+    border: 1% solid black;
+    border-radius: 0px;
+    margin: 10px 1%;
+    overflow: hidden;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.56);
+    }
+
+
+    .contact{
+        /* font-size: 30px; */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .footer{
+    justify-content: center;
+    font-size: 12px; 
+    }
+    
+    .footer img {
+    width: 70px;    
+    }
+    
+
+
+
+@media screen and (max-width: 480px){
+    .logo-header.figure{
+    width: 25%;
+    }
+
+    h2{
+    font-size: 25px; 
+    padding: 0px 0px 2.5px 0px;
+    margin: 0px 0px 0px 5px;
+    border-bottom: 4px solid rgb(34, 51, 78);        
+    }
+    
+    .organizacion-reseña.descripcion{
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: -0.2px;
+    }
+    
+    .contact{
+    border-top: 2px solid rgb(34, 51, 78);
+    justify-content: center;
+    /* align-items: center; */
+    }
+    
+    .form-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    }
+    
+    .form-email input {
+    background-size: 12px 12px;
+    }
+    .footer{
+    justify-content: center;
+    font-size: 11px; 
+    }
+      
+    .footer img {
+    width: 60px;    
+    }
+    
+}
+
+
+@media screen and (max-width: 320px){
+    .logo-header.figure{
+    width: 30%;
+    }
+    h2{
+    font-size: 20px; 
+    padding: 0px 0px 2px 0px;
+    margin: 0px 0px 0px 2.5px;
+    border-bottom: 4px solid rgb(34, 51, 78);        
+    }
+    .organizacion-reseña.descripcion{
+    width: 100%;
+    font-size: 8px;
+    letter-spacing: -0.2px;
+    }
+
+    .form-email{
+    font-size: 15px;
+    }
+    .form-email input {
+        background-size: 10px 10px;
+    }
+
+
+    
+    .footer{
+        justify-content: center;
+        font-size: 10px; 
+    }
+      
+    .footer img {
+    width: 50px;    
+    }
+}
+
+
+    
+
+
+
+
+/* Mobile First
+@media screen type and (max-width: 320px) { }
+@media screen type and (max-width: 480px) { }
+@media screen type and (max-width: 768px) { }
+@media screen type and (max-width: 1024px) { }
+
+Desktop First
+@media screen type and (min-width: 1024px) { }
+@media screen type and (min-width: 768px) { }
+@media screen type and (min-width: 480px) { }
+@media screen type and (min-width: 320px) { }
+
+
+@media screen type and (max-width: 768px) and (min-width: 480px) { }
+ */
+
+/* Tipos de Display : Flex 
+Justify-content: 
+flex-start
+flex-end
+center 
+space-between
+space-around
+
+
+Align-items:
+flex-start
+flex-end
+center 
+baseline
+stretch
+
+Flex-direction:
+row
+row-reverse
+column
+column-reverse 
+
+estos reverse, tambien hacen reverse los comandos justify y align sobre ellos
+
+
+Align-self:
+Mismos comandos de align-items pero aplica al elemento individual.
+
+
+flex-wrap:
+nowrap   todo los elementos se ajustan en una sola linea, si hay mucho elementos estos suelen deformarse en resolución
+wrap   se ajustan en las lineas necesarias para que no se deformen.
+wrap-reverse igual que wrap pero alrevez
+
+
+flex-flow
+es la combinación de (flex-direction flex-wrap)
+
+
+Align-Content
+solo funciona cuando hay varias lineas
+Determina el espacio entre las lineas, es como un align-items pero coge multiples líneas en conjunto
+
+
+
+/* Formas de seleccionar etiquetas
+
+header {
+background: rgb(33, 29, 82) ;
+} 
+
+selección descendente
+body header div nav ol li a
+
+selector de clase
+.link
+
+selector de id 
+#portafolio */
+*/
